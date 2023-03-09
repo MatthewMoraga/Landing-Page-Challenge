@@ -1,0 +1,307 @@
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles */
+
+body {
+    background: rgb(39, 37, 37);
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* styles for header section at the top of the page */
+
+header {
+    color: #fff;
+    background-color: #444;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 100px;
+}
+
+/* styles the title box for Matthew's Portfolio */
+
+h1 {
+    padding: 5px;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* styles the text for h1 */
+
+.header {
+    margin: 10px 0px;
+    color: white;
+    display: flex;
+    justify-content: right;
+    background-color: blue;
+}
+
+/* styles the links in the header  */
+
+a {
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    position: relative;
+    top: 60px;
+    right: 60px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+/* styles the banner below the header  */
+
+.banner {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+/* styles the height/width/position for the figcaption */
+
+.bannerfig {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* styles the text part of the figcaption  */
+
+.subtitle {
+    margin: 0px;
+    padding: 5px;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    width: 30%;
+    text-align: right;
+    background-color: blue;
+}
+
+/* styles the about me section of the page */
+/* note: .about and . class selectors may look like they have the same code
+but they do have positional differences. */
+
+.about {
+    margin: 5px;
+    padding: 5px;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+/* styles the "About Me" text and adds a border bar */
+
+.metext {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    position: relative;
+    width: 10%;
+    border-right: solid 5px gold;
+    text-align: right;
+}
+
+/* styles the paragraph next to About Me */
+
+p {
+    margin:  5px;
+    position: relative;
+    width: 70%;
+    color: white;
+    left: 100px;
+}
+
+/* styles the work section of the page */
+
+.work {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+    top: 150px;
+    height: 800px;
+    width: 100%;
+}
+
+/* styles the "Work" text and adds a border */
+
+.worktext {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    position: relative;
+    width: 10%;
+    border-right: solid 5px gold;
+    text-align: right;
+}
+
+/* this section styles the big image for surf report */
+
+.surfreport {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    bottom: 700px;
+}
+
+/* waves is the class for the surfreport image */
+
+.waves {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: solid 5px #add8e6;
+
+}
+
+/* ocean is the class for the container of the image and the link */
+
+.ocean {
+    display: block;
+    left: 20px;
+}
+
+.surfreport a {
+    filter: contrast(70%);
+    width: 70%;
+    height: 300px;
+    text-decoration: none;
+    transition: contrast(100%);
+}
+
+/* .surf and .mern are the class selectors for the fig captions */
+/* I seperated them so that I could style them different */
+/* not sure if there is a better way to do that yet */
+
+.surf {
+    color: #00008b;
+    text-align: left;
+    background-color: #add8e6;
+    padding: 5px;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    bottom: 100px;
+    font-size: 24px;
+}
+
+.mern {
+    color: #00008b;
+    text-align: left;
+    background-color: #add8e6;
+    padding: 5px;
+    position: relative;
+    width: 150px;
+    height: 20px;
+    bottom: 100px;
+    font-size: 14px;
+}
+
+/* sets every image to fit max % inside thier respective containers */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* styles the section where the smaller images go */
+
+.small {
+    padding: 15px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    bottom: 800px;
+    flex-wrap: wrap;
+}
+
+/* styles the class selectors for the anchor links and containers */
+
+.smallbox {
+    display: block;
+    position: relative;
+    border: solid 5px #add8e6;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.link {
+    padding: 5px;
+    margin: 10px;
+    left: 20px;
+    height: 100%;
+}
+
+/* needed to specify here since I don't want to style the anchors at the header as well */
+
+.small a {
+    filter: contrast(70%);
+    display: block;
+    width: 35%;
+    height: 200px;
+    transition: contrast(100%) 0.5s;
+}
+
+/* adds a cool hover animation form contrast to clear */
+
+a:hover {
+   filter: contrast(100%);
+}
+
+/* footer styling */
+
+footer {
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #444;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.footer {
+    margin: 10px 0px;
+    color: white;
+}
+
+/* contact section footer styling */
+
+.contact {
+    background-color: #444;
+    position: relative;
+    height: 200px;
+    width: 10%;
+}
+
+.contacttext {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    position: relative;
+    border-right: solid 5px gold;
+    text-align: right;
+    height: 190px;
+}
